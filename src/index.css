@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+@layer utilities {
+  .bi-gradient {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #6448fe, #600594) 1;
+  }
+}
