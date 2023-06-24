@@ -39,9 +39,13 @@ Users should be able to:
   <summary><h2><b>🎨 Designs</b></h2></summary>
 <br>
 
+![desktop-design](https://github.com/rauljariasz/interactive-card/assets/113625378/d66e587f-ea84-41e4-a39a-570fa7809133)
+![mobile-design](https://github.com/rauljariasz/interactive-card/assets/113625378/82e33d1e-7567-4544-ac97-e4e04f9ec1f0)
+
 </details>
 </div>
 <br>
+
 
 <div align="center">
 <b>Thanks for look at it ♥.</b>
