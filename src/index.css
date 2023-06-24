@@ -6,10 +6,17 @@
   * {
     font-family: 'Space Grotesk', sans-serif;
   }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
 }
 @layer utilities {
-  .bi-gradient {
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, #6448fe, #600594) 1;
+  .text-errors {
+    @apply text-error text-[12px];
   }
 }

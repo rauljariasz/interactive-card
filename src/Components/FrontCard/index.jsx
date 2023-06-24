@@ -1,7 +1,7 @@
 import card from '../../assets/bg-card-front.png'
 import logo from '../../assets/card-logo.svg'
 
-const FrontCard = () => {
+const FrontCard = ({ cardNumber, name }) => {
   return (
     <div className='w-[286px] h-[157px] lg:w-[447px] lg:h-[245px] relative'>
       <img
@@ -16,11 +16,11 @@ const FrontCard = () => {
       />
       {/* Numero de tarjeta */}
       <p className='text-white absolute left-5 top-[90px] tracking-[2px] lg:top-[130px] lg:text-3xl'>
-        0000 0000 0000 0000
+        {cardNumber}
       </p>
       {/* Nombre */}
       <p className='text-white absolute left-5 bottom-4 text-[11px] lg:text-[18px]'>
-        Raul Arias
+        {name}
       </p>
       {/* Caducidad */}
       <p className='text-white absolute right-5 bottom-4 text-[11px] lg:text-[18px]'>
