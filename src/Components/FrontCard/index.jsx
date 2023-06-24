@@ -1,7 +1,7 @@
 import card from '../../assets/bg-card-front.png'
 import logo from '../../assets/card-logo.svg'
 
-const FrontCard = ({ cardNumber, name }) => {
+const FrontCard = ({ cardNumber, name, month, year }) => {
   return (
     <div className='w-[286px] h-[157px] lg:w-[447px] lg:h-[245px] relative'>
       <img
@@ -24,7 +24,7 @@ const FrontCard = ({ cardNumber, name }) => {
       </p>
       {/* Caducidad */}
       <p className='text-white absolute right-5 bottom-4 text-[11px] lg:text-[18px]'>
-        00/00
+        {month}/{year}
       </p>
     </div>
   )
