@@ -226,12 +226,9 @@ const Form = ({
       <div className='flex gap-4'>
         {/* EXP DATE */}
         <div className='flex flex-col gap-2 w-1/2'>
-          <label
-            htmlFor='month'
-            className='text-darkViolet tracking-[2px] text-[12px] font-semibold'
-          >
+          <h1 className='text-darkViolet tracking-[2px] text-[12px] font-semibold'>
             EXP. DATE (MM/YY)
-          </label>
+          </h1>
           <div className='flex w-full gap-2'>
             {/* MM */}
             <input
