@@ -4,7 +4,6 @@ import { agregarCaracter } from '../../Logic'
 const Form = ({
   setCardNumber,
   setName,
-  submitted,
   setSubmitted,
   month,
   setMonth,
@@ -159,11 +158,9 @@ const Form = ({
 
     /* validar si hubo errores para poder setear el estado submit y cambiar la vista */
     if (errorOcurred || characters) {
-      console.log('hay un error', submitted)
       return
     } else {
       setSubmitted(true)
-      console.log('todo bello', submitted)
     }
   }
 
@@ -173,7 +170,7 @@ const Form = ({
   return (
     <form
       onSubmit={handleSubmit}
-      className='flex flex-col gap-5 w-full max-w-[381px]'
+      className='flex flex-col gap-5 w-full max-w-[381px] fade-in-fwd'
     >
       {/* CARD HOLDER NAME */}
       <div className='flex flex-col gap-2'>
@@ -281,7 +278,7 @@ const Form = ({
             name='cvc'
             placeholder='e.g. 123'
             value={cvc}
-            className={`flex-1 max-h-[45px] px-4 border placeholder:text-lightGrayish rounded-lg  text-darkViolet ${
+            className={`flex-1 min-h-[45px] max-h-[45px] px-4 border placeholder:text-lightGrayish rounded-lg  text-darkViolet ${
               cvcError ? styleInputError : styleInput
             }`}
           />

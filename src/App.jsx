@@ -2,6 +2,7 @@ import FrontCard from './Components/FrontCard'
 import BackCard from './Components/BackCard'
 import Form from './Components/Form'
 import { useState } from 'react'
+import Completed from './Components/Completed'
 
 function App() {
   const [cardNumber, setCardNumber] = useState('0000 0000 0000 0000')
@@ -45,26 +46,28 @@ function App() {
 
         {/* Form */}
         <section className='flex justify-center items-center flex-1 mt-[80px] px-[25px]'>
-          <Form
-            setCardNumber={setCardNumber}
-            setName={setName}
-            submitted={submitted}
-            setSubmitted={setSubmitted}
-            month={month}
-            setMonth={setMonth}
-            year={year}
-            setYear={setYear}
-            cvc={cvc}
-            setCvc={setCvc}
-          />
-          {/* {submitted ? null : (
+          {submitted ? (
+            <Completed
+              setCardNumber={setCardNumber}
+              setName={setName}
+              setSubmitted={setSubmitted}
+              setMonth={setMonth}
+              setYear={setYear}
+              setCvc={setCvc}
+            />
+          ) : (
             <Form
               setCardNumber={setCardNumber}
               setName={setName}
-              submitted={submitted}
               setSubmitted={setSubmitted}
+              month={month}
+              setMonth={setMonth}
+              year={year}
+              setYear={setYear}
+              cvc={cvc}
+              setCvc={setCvc}
             />
-          )} */}
+          )}
         </section>
       </main>
     </>
